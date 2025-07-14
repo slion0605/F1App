@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lap Times</title>
+</head>
+<body>
+    <h1>Lewis Hamilton - 2022 Bahrain GP Lap Times</h1>
+    <table border="1">
+        <tr>
+            <th>Lap</th>
+            <th>Time (s)</th>
+        </tr>
+        {% for lap in lap_times %}
+        <tr>
+            <td>{{ lap.lap_number }}</td>
+            <td>{{ lap.lap_time }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

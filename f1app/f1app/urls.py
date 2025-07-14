@@ -20,8 +20,7 @@ from f1StatsApp import views
 
 
 urlpatterns = [
-path('', views.index, name='index'),
-path('f1statsapp/', include('f1StatsApp.urls')),
+path('', include('f1StatsApp.urls')),
 path('admin/', admin.site.urls),
 ]
 
